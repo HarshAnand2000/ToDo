@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY TODO</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen w-screen">
+    <div id="container" class="pt-6 h-full w-full flex flex-col items-center gap-4">
+        <h1 class="text-4xl font-semibold ">To Do App</h1>
+        <div id="header" class="mx-auto flex gap-3">
+            <input placeholder="Enter a task here" type="text"
+                class="border-[1px] border-slate-500 py-1 px-2 text-sm font-normal rounded" />
+            <div class="save text-xs font-semibold bg-blue-600 px-4 py-2 rounded text-white cursor-pointer">SAVE</div>
+            <div class="pending-tasks text-xs font-semibold bg-yellow-600 px-4 py-2 rounded text-white cursor-pointer">
+                GET PENDING TASKS</div>
+        </div>
+
+        <div id="todo-data" class="w-[90%]">
+            <div id="header-row" class="flex gap-10 border-b-2 border-slate-300 h-10">
+                <h4 class="font-semibold text-lg w-[5%] grow">No.</h4>
+                <h4 class="font-semibold text-lg w-[30%] grow">Todo item</h4>
+                <h4 class="font-semibold text-lg w-[17%] grow">Status</h4>
+                <h4 class="font-semibold text-lg w-[40%] grow">Actions</h4>
+            </div>
+
+            <div id="todo-data-list">
+                <!-- <div class="row flex gap-10 h-16 border-b-2 border-slate-300 flex items-center">
+                    <h4 class="w-[5%] grow">1</h4>
+                    <h4 class="w-[30%] grow">Buy groceries for next week</h4>
+                    <h4 class="w-[17%] grow">In progress</h4>
+                    <div class="w-[40%] grow flex gap-2">
+                        <div
+                            class="delete text-xs font-semibold bg-red-600 px-4 py-2 rounded text-white w-24 text-center cursor-pointer">
+                            DELETE
+                        </div>
+                        <div
+                            class="text-xs font-semibold bg-green-600 px-4 py-2 rounded text-white w-24 text-center cursor-pointer">
+                            FINISHED</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src=" script.js"></script>
+</body>
+
+</html>
